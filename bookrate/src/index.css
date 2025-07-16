@@ -1,0 +1,264 @@
+body{
+  margin: 0;
+  background-color: rgb(255, 201, 134);
+}
+
+.welText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Add Book */
+
+.addBook {
+  color: #000;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8d9aa;
+  width: 90%;
+  max-width: 600px;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.field,
+.desc,
+.rating {
+  color: #ffffff;
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #db9943;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.desc {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.field:focus,
+.desc:focus,
+.rating:focus {
+  background-color: #ffe0aa;
+  box-shadow: 0 0 5px rgba(255, 180, 80, 0.8);
+}
+
+.addbutton {
+  width: 120px;
+  height: 40px;
+  background-color: #f0b65f;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 1rem auto 0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.addbutton:hover {
+  background-color: #db9943;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Book container */
+
+/* Book Card Styling */
+.book-card {
+  background-color: #f8d9aa; /* light yellow-orange box */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  width: 280px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.book-card:hover {
+  transform: scale(1.02);
+}
+
+/* Container for all books */
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* bookList */
+
+.htitle{
+  text-align: center;
+}
+
+/* Nav bar */
+
+.navbar-wrapper{
+  
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #835050;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 30px; /* curve sides */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px; /* adjust width */
+  text-decoration: none;
+}
+
+.nav-links{
+  display: flex;
+  gap: 5em;
+  align-items: center;
+  justify-content: center;
+
+}
+.nav-links a {
+  text-decoration: none;  /* removes the underline */
+  color: rgb(224, 190, 146);
+  font-weight: 500;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #0c0c0b;
+  text-decoration: none;
+}
+
+/* book detial */
+
+.book-detail{
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 1rem;
+  background-color: #ebcc9e;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex-direction: column;
+}
+.book-detail h2 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 50px;
+}
+
+.book-detail p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  text-align: left;
+  gap: 1em;
+}
+
+.delete-btn{
+  width: 100px;
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  background-color: rgb(240, 182, 95);
+}
+
+.delete-btn:hover{
+  cursor: pointer;
+  background-color: rgb(235, 70, 41);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition: ease-in-out ;
+}
+
+/* login page */
+
+/* Login.css */
+
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.login-box {
+  background-color: #f8d9aa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.login-box input {
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-box button {
+  padding: 0.7rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.register-text {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
