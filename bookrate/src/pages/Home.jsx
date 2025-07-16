@@ -27,8 +27,9 @@ export default function Home() {
   if (error) return <p style={{ color: 'red' }}>{error}</p>;
 
   return (
+    
     <div style={{ padding: '2rem' }}>
-      <h1>📚 Welcome to BookRate!</h1>
+      <h1 className="wel-text"> Welcome to BookRate!</h1>
       <p>Discover the top rated books below.</p>
 
       <div style={{ display: 'flex', gap: '2rem', marginTop: '2rem', flexWrap: 'wrap' }}>
