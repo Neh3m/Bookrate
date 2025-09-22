@@ -21,5 +21,5 @@ A full-stack web application for users to browse, review, and manage books.
 ## Demo Users
 
 👤 Admin:
-username: adiminuser
+username: adminuser
 password: securepassword
